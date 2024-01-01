@@ -1,0 +1,9 @@
+.adminProfile .login__container{
+    padding-top: 0.01rem;
+    width: 90%;
+}
+
+.adminProfile{
+    display: flex;
+    justify-content: center;
+}

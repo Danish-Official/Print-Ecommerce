@@ -1,0 +1,18 @@
+.buttonComp {
+    background-color: #ff5151;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0.55rem 2.7rem;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: var(--transition);
+    margin: 1rem auto;
+  }
+  .buttonComp i{
+    position: relative;
+    top: 3px;
+    left: 9px;
+  }

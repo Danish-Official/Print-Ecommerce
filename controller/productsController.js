@@ -43,12 +43,7 @@ const createProductController = async (req, res) => {
 const updateProductController = async (req, res) => {
   try {
       const { name, cid, description, price, quantity, sale, mostLoved, featured, discountedPrice } = req.fields;
-      const updateData = { name, cid, description, price, quantity, mostLoved, featured, sale, discountedPrice };
-
-      // // Check if discountedPrice is provided and not null
-      // if (discountedPrice !== undefined && discountedPrice !== null) {
-      //     updateData.discountedPrice = discountedPrice;
-      // }
+      const updateData = { name, cid, description, price, quantity, mostLoved, featured, sale, discountedPrice }
       
       const Product = await ProductsModel.findByIdAndUpdate(req.params.id, updateData);
       const { photo } = req.files;

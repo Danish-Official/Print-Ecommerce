@@ -1,0 +1,74 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.saleBadge {
+  background-color: #ff5151;
+  border-radius: 50%;
+  color: black;
+  width: 2.3rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: absolute;
+  top: -0.5vw;
+  right: 0;
+  z-index: 1;
+}
+.card-content{
+  text-align: center;
+}
+.card .card-img {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 22.7vw;
+  aspect-ratio: 1/1;
+}
+.card .category-span {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.6;
+  margin: 0.5rem;
+}
+.card h2 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #4e5561;
+}
+.card .discountedPrice {
+  font-weight: 700;
+  font-size: 14px;
+}
+.card .price {
+  color: #4e5561;
+  margin-right: 0.2rem;
+  font-weight: 700;
+  font-size: 14px;
+}
+@media screen and (max-width: 921px) {
+  .saleBadge {
+    width: 2rem;
+    top: -0.5vw;
+    right: 4vw;
+  }
+}
+@media screen and (max-width: 545px) {
+  .cups {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card .card-img {
+    width: 89vw;
+    height: 89vw;
+  }
+  .saleBadge {
+    width: 2.3rem;
+    right: 0.5vw;
+    top: -0.9vw;
+  }
+}

@@ -1,0 +1,77 @@
+.contact__container {
+  padding: 3rem 0;
+  color: #415161;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem;
+  gap: 2rem;
+}
+
+.details{
+    padding: 2rem 0;
+}
+.details > h1 {
+  margin: 1rem 0;
+  font-weight: 600;
+}
+.details > p {
+  margin: 2rem 0;
+}
+.contact__container .element__divider {
+  width: 110px;
+  border: 0.1rem solid #ff5151;
+}
+.contact-address {
+  margin: 2rem 0;
+}
+.contact-address i{
+  margin-right: 1rem;
+  color: #ff5151;
+}
+.contact-address>div{
+    margin: 0.9rem 0;
+}
+
+.queries{
+    border: 0.15rem solid #e2e2e2;
+    border-radius: 0.3rem;
+}
+.queries>form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem;
+}
+form>h2{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+input{
+    padding: 0.7rem;
+    margin: 0.7rem 0;
+    background-color: #fafafa;
+    border: 1px solid #e2e2e2;
+    font-size: 16px;
+}
+textarea{
+    margin: 0.7rem 0;
+    padding: 0.7rem;
+    background-color: #fafafa;
+    border: 1px solid #e2e2e2;
+    font-size: 16px;
+}
+.sendmssg{
+    color: white;
+    background-color: #ff5151;
+    border: none;
+    width: 180px;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    margin: 1rem 0;
+}
+@media screen and (max-width:767px){
+    .contact__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
